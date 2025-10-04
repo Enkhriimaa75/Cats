@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cat Breeds Guide</title>
+<link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #9b59b6;
+margin: 0;
+padding: 0;
+}
+nav {
+background-color: white;
+padding: 0;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav a {
+display: inline-block;
+padding: 20px 30px;
+color: #9b59b6;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+background-color: #9b59b6;
+color: white;
+}
+.page {
+display: none;
+padding: 40px 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+#home:target,
+#breeds:target,
+#care:target,
+#persian:target,
+#siamese:target,
+#mainecoon:target,
+#bengal:target,
+#british:target,
+#ragdoll:target,
+#abyssinian:target,
+#scottish:target,
+#sphynx:target {
+display: block;
+}
+#home {
+display: block;
+}
+.title {
+text-align: center;
+color: white;
+margin-bottom: 40px;
+}
+.title h1 {
+font-size: 42px;
+margin: 0 0 10px 0;
+}
+.intro {
+background-color: white;
+border-radius: 15px;
+padding: 35px;
+margin-bottom: 40px;
+line-height: 1.8;
+}
+.intro h2 {
+color: #9b59b6;
+font-size: 28px;
+margin-top: 0;
+}
+.intro p {
+color: #666;
+font-size: 16px;
+margin: 15px 0;
+}
+.cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+.card {
+background-color: white;
+border-radius: 15px;
+overflow: hidden;
+cursor: pointer;
+transition: transform 0.3s;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+.card-image {
+width: 100%;
+height: 250px;
+object-fit: cover;
+background-color: #f0f0f0;
+}
+.card-content {
+padding: 25px;
+}
+.card h3 {
+color: #9b59b6;
+font-size: 24px;
+margin: 0 0 10px 0;
+}
+.card p {
+color: #666;
+line-height: 1.6;
+margin: 5px 0;
+}
+.detail-container {
+background-color: white;
+border-radius: 15px;
+padding: 40px;
+max-width: 900px;
+margin: 0 auto;
+}
+.detail-header {
+text-align: center;
+margin-bottom: 30px;
+}
+.detail-header h1 {
+color: #9b59b6;
+font-size: 36px;
+margin: 0 0 10px 0;
+}
+.detail-image {
+width: 100%;
+max-width: 600px;
+height: 400px;
+object-fit: cover;
+border-radius: 15px;
+margin: 20px auto;
+display: block;
+}
+.detail-section {
+margin: 25px 0;
+}
+.detail-section h2 {
+color: #9b59b6;
+font-size: 24px;
+margin: 20px 0 10px 0;
+}
+.detail-section p {
+color: #666;
+line-height: 1.8;
+margin: 10px 0;
+}
+.detail-section ul {
+color: #666;
+line-height: 1.8;
+margin: 10px 0 10px 20px;
+}
+.detail-section li {
+margin: 5px 0;
+}
+.info-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+margin: 20px 0;
+}
+.info-item {
+background-color: #f9f9f9;
+padding: 15px;
+border-radius: 10px;
+}
+.info-item strong {
+color: #9b59b6;
+}
+.back-btn {
+display: inline-block;
+background-color: #9b59b6;
+color: white;
+padding: 12px 30px;
+text-decoration: none;
+border-radius: 25px;
+margin: 20px 0;
+transition: background-color 0.3s;
+}
+.back-btn:hover {
+background-color: #8e44ad;
+}
+.box {
+background-color: white;
+border-radius: 15px;
+padding: 30px;
+margin-bottom: 25px;
+}
+.box h2 {
+color: #9b59b6;
+font-size: 28px;
+margin: 0 0 15px 0;
+}
+.box ul {
+margin: 0 0 0 20px;
+}
+.box li {
+color: #666;
+line-height: 1.8;
+margin: 5px 0;
+}
+.box p {
+color: #666;
+line-height: 1.8;
+margin: 10px 0;
+}
+footer {
+background-color: rgba(0,0,0,0.3);
+color: white;
+text-align: center;
+padding: 30px;
+margin-top: 60px;
+}
+footer a {
+color: white;
+text-decoration: none;
+}
+footer a:hover {
+text-decoration: underline;
+}
+@media (max-width: 768px) {
+.cards {
+grid-template-columns: 1fr;
+}
+.info-grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">Home</a>
+<a href="#breeds">Cat Breeds</a>
+<a href="#care">Care Guide</a>
+</nav>
+<div id="home" class="page">
+<div class="title">
+<h1>&#128049; Cat Breeds Guide</h1>
+<p>Learn about different types of cats</p>
+</div>
+<div class="intro">
+<h2>Welcome to Our Cat Breeds Guide!</h2>
+<p>Cats have been companions to humans for thousands of years. Today, there are many different breeds, each with their own unique personality and appearance. Whether you're thinking about getting a cat or just love learning about them, this website is here to help.</p>
+<p>On this site, you'll discover various cat breeds from around the world. Each breed has special traits that make them different. Some cats are playful and energetic, while others are calm and quiet. Some need lots of grooming, and others are easy to care for.</p>
+<p>We've also included helpful tips on how to take care of your cat. From feeding and grooming to keeping them healthy and happy, you'll find everything you need to know about being a great cat owner.</p>
+<p>Browse through our collection of cat breeds below, or use the menu above to explore more about these amazing animals!</p>
+</div>
+<div class="cards">
+<a href="#persian" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fpersian_cat_3.jpg&cd=1a5c91537f33ea5aeca9946b3c410ad5" alt="Persian Cat" class="card-image">
+<div class="card-content">
+<h3>Persian Cat</h3>
+<p><strong>From:</strong> Iran</p>
+<p>Long fluffy fur and flat face. Very calm and loves sitting on your lap. Needs daily brushing.</p>
+</div>
+</div>
+</a>
+<a href="#siamese" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fsiamese_cat_4.jpg&cd=9e4d70c41c333fa70c8fa52f36f52513" alt="Siamese Cat" class="card-image">
+<div class="card-content">
+<h3>Siamese Cat</h3>
+<p><strong>From:</strong> Thailand</p>
+<p>Talkative and smart. Has beautiful blue eyes and loves playing with people.</p>
+</div>
+</div>
+</a>
+<a href="#mainecoon" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fmaine_coon_cat_3.jpg&cd=d8b9b3737e07d668e151e98884d9cb5a" alt="Maine Coon" class="card-image">
+<div class="card-content">
+<h3>Maine Coon</h3>
+<p><strong>From:</strong> United States</p>
+<p>One of the biggest pet cats. Very friendly and great with kids and other pets.</p>
+</div>
+</div>
+</a>
+<a href="#bengal" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fbengal_4.jpg&cd=ec1a0e7ad1741bdd8bd9ced65b1c1229" alt="Bengal Cat" class="card-image">
+<div class="card-content">
+<h3>Bengal Cat</h3>
+<p><strong>From:</strong> United States</p>
+<p>Spotted coat like a wild leopard. Very energetic and playful, loves to climb and explore.</p>
+</div>
+</div>
+</a>
+<a href="#british" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fbritish_shorthair_cat_4.jpg&cd=cfa5425d199c2896780b1469e2f1a60a" alt="British Shorthair" class="card-image">
+<div class="card-content">
+<h3>British Shorthair</h3>
+<p><strong>From:</strong> United Kingdom</p>
+<p>Round face and plush coat. Calm and easygoing, perfect for quiet homes.</p>
+</div>
+</div>
+</a>
+<a href="#ragdoll" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fragdoll_3.jpg&cd=f117e5878cf9b2701fedf219f3576887" alt="Ragdoll Cat" class="card-image">
+<div class="card-content">
+<h3>Ragdoll Cat</h3>
+<p><strong>From:</strong> United States</p>
+<p>Large and gentle with blue eyes. Goes limp when picked up, hence the name "Ragdoll".</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div id="breeds" class="page">
+<div class="title">
+<h1>All Cat Breeds</h1>
+<p>Different types of cats</p>
+</div>
+<div class="cards">
+<a href="#persian" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fpersian_cat_3.jpg&cd=1a5c91537f33ea5aeca9946b3c410ad5" alt="Persian Cat" class="card-image">
+<div class="card-content">
+<h3>Persian Cat</h3>
+<p><strong>From:</strong> Iran</p>
+<p>Long fluffy fur and flat face. Very calm and loves sitting on your lap.</p>
+</div>
+</div>
+</a>
+<a href="#siamese" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fsiamese_cat_4.jpg&cd=9e4d70c41c333fa70c8fa52f36f52513" alt="Siamese Cat" class="card-image">
+<div class="card-content">
+<h3>Siamese Cat</h3>
+<p><strong>From:</strong> Thailand</p>
+<p>Talkative and smart with beautiful blue eyes.</p>
+</div>
+</div>
+</a>
+<a href="#mainecoon" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fmaine_coon_cat_3.jpg&cd=d8b9b3737e07d668e151e98884d9cb5a" alt="Maine Coon" class="card-image">
+<div class="card-content">
+<h3>Maine Coon</h3>
+<p><strong>From:</strong> United States</p>
+<p>One of the biggest pet cats. Very friendly.</p>
+</div>
+</div>
+</a>
+<a href="#bengal" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fbengal_4.jpg&cd=ec1a0e7ad1741bdd8bd9ced65b1c1229" alt="Bengal Cat" class="card-image">
+<div class="card-content">
+<h3>Bengal Cat</h3>
+<p><strong>From:</strong> United States</p>
+<p>Spotted coat like a wild leopard. Very energetic.</p>
+</div>
+</div>
+</a>
+<a href="#british" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fbritish_shorthair_cat_4.jpg&cd=cfa5425d199c2896780b1469e2f1a60a" alt="British Shorthair" class="card-image">
+<div class="card-content">
+<h3>British Shorthair</h3>
+<p><strong>From:</strong> United Kingdom</p>
+<p>Round face and plush coat. Calm and easygoing.</p>
+</div>
+</div>
+</a>
+<a href="#ragdoll" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fragdoll_3.jpg&cd=f117e5878cf9b2701fedf219f3576887" alt="Ragdoll Cat" class="card-image">
+<div class="card-content">
+<h3>Ragdoll Cat</h3>
+<p><strong>From:</strong> United States</p>
+<p>Large and gentle with blue eyes.</p>
+</div>
+</div>
+</a>
+<a href="#abyssinian" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fabyssinian_cat_3.jpg&cd=69d594294cf5ba3eab55c7e7fa49abe5" alt="Abyssinian Cat" class="card-image">
+<div class="card-content">
+<h3>Abyssinian Cat</h3>
+<p><strong>From:</strong> Ethiopia</p>
+<p>Short ticked coat with a wild look. Curious and athletic.</p>
+</div>
+</div>
+</a>
+<a href="#scottish" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fscottish_fold_cat_4.jpg&cd=6ea9b512c1eb9d825dd0fcff56dcf585" alt="Scottish Fold" class="card-image">
+<div class="card-content">
+<h3>Scottish Fold</h3>
+<p><strong>From:</strong> Scotland</p>
+<p>Unique folded ears and round eyes. Sweet and calm.</p>
+</div>
+</div>
+</a>
+<a href="#sphynx" style="text-decoration: none;">
+<div class="card">
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fsphynx_2.jpg&cd=03f80fd516bed34d577627319af5f788" alt="Sphynx Cat" class="card-image">
+<div class="card-content">
+<h3>Sphynx Cat</h3>
+<p><strong>From:</strong> Canada</p>
+<p>Hairless and warm to touch. Very friendly and silly.</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div id="persian" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Persian Cat</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fpersian_cat_3.jpg&cd=1a5c91537f33ea5aeca9946b3c410ad5" alt="Persian Cat" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Medium to large</div>
+<div class="info-item"><strong>Weight:</strong> Males 9-14 lbs, Females 7-11 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Long, thick, glossy</div>
+<div class="info-item"><strong>Color:</strong> White, blue, black, red, cream, chocolate, lilac</div>
+</div>
+<div class="detail-section">
+<h2>About the Persian Cat</h2>
+<p>The Persian cat is one of the most recognizable and beloved cat breeds in the world. Known for their luxurious long coat and distinctive flat face, Persians are the epitome of feline elegance and grace.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Persian cats are known for their calm, gentle, and sweet nature. They are affectionate companions who enjoy a peaceful environment. Unlike more active breeds, Persians prefer lounging on the sofa or sitting on your lap to climbing and jumping. They are perfect for quiet households and make wonderful indoor companions.</p>
+<p>These cats are not particularly vocal and communicate with soft, melodious voices. They form strong bonds with their family members and enjoy being pampered and adored.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>The Persian cat has a distinctive appearance with a round, massive head, small ears, large round eyes, and a short, thick neck. Their most notable feature is their extremely long, flowing coat that requires daily maintenance. The coat can come in a wide variety of colors and patterns.</p>
+<p>Their flat face, while adorable, requires special attention to keep clean, especially around the eyes where tear staining can occur.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Persian cats require extensive grooming due to their long, thick coat. Daily brushing is essential to prevent matting and tangles. Their facial area needs regular cleaning, and their eyes should be wiped daily to prevent staining. Regular baths every few weeks help keep their coat in pristine condition.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Persian cats can be prone to certain health issues including:</p>
+<ul>
+<li>Polycystic kidney disease</li>
+<li>Breathing difficulties due to their flat face</li>
+<li>Dental malocclusions</li>
+<li>Eye conditions such as excessive tearing</li>
+<li>Hypertrophic cardiomyopathy</li>
+</ul>
+<p>Regular veterinary check-ups are important to maintain their health.</p>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>12 to 17 years with proper care</p>
+</div>
+</div>
+</div>
+<div id="siamese" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Siamese Cat</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fsiamese_cat_4.jpg&cd=9e4d70c41c333fa70c8fa52f36f52513" alt="Siamese Cat" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Medium</div>
+<div class="info-item"><strong>Weight:</strong> Males 11-15 lbs, Females 8-12 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Short, fine, glossy</div>
+<div class="info-item"><strong>Color:</strong> Seal point, chocolate point, blue point, lilac point</div>
+</div>
+<div class="detail-section">
+<h2>About the Siamese Cat</h2>
+<p>The Siamese is one of the oldest and most recognizable cat breeds. Originating from Thailand, these elegant cats are known for their striking blue eyes, color-pointed coat, and incredibly vocal nature.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Siamese cats are extremely intelligent, social, and vocal. They love to communicate with their owners through loud meows and will often follow you around the house. These cats form deep bonds with their family and don't like being left alone for long periods.</p>
+<p>They are playful, energetic, and curious, making them wonderful interactive companions. Siamese cats thrive on attention and love being involved in every aspect of their owner's life.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>Siamese cats have a distinctive appearance with their wedge-shaped head, large ears, almond-shaped blue eyes, and sleek, muscular body. Their coat is short and lies close to the body, with darker points on the ears, face, paws, and tail.</p>
+<p>They are athletic cats with long, slender bodies and are known for their grace and agility.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Siamese cats have short coats that require minimal grooming. Weekly brushing is usually sufficient to remove loose hair and keep their coat shiny. They are generally good at grooming themselves.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Siamese cats may be prone to:</p>
+<ul>
+<li>Dental disease</li>
+<li>Respiratory issues</li>
+<li>Progressive retinal atrophy</li>
+<li>Amyloidosis</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>12 to 20 years</p>
+</div>
+</div>
+</div>
+<div id="mainecoon" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Maine Coon</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fmaine_coon_cat_3.jpg&cd=d8b9b3737e07d668e151e98884d9cb5a" alt="Maine Coon" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Large</div>
+<div class="info-item"><strong>Weight:</strong> Males 12-15 lbs, Females 9-12 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Shorter on shoulders, longer on stomach, smooth, shaggy</div>
+<div class="info-item"><strong>Color:</strong> Most commonly brown tabby, but various colors possible</div>
+</div>
+<div class="detail-section">
+<h2>About the Maine Coon</h2>
+<p>The Maine Coon is one of the largest domesticated cat breeds. Known as the "gentle giant" of the cat world, they are native to the United States and are the official state cat of Maine.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Maine Coons are incredibly friendly, sociable, and good-natured. Despite their large size, they are gentle and patient, making them excellent family pets. They get along well with children, dogs, and other cats.</p>
+<p>These cats are playful and retain their kitten-like playfulness well into adulthood. They are intelligent and can be trained to perform tricks or walk on a leash.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>Maine Coons have a distinctive physical appearance with their large, muscular bodies, long, bushy tails, and tufted ears. They have a shaggy, water-resistant coat that helps them survive in cold climates. Their large paws act like snowshoes.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Despite their long coat, Maine Coons require only moderate grooming. Brushing two to three times per week helps prevent matting and keeps their coat healthy.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Maine Coons may be prone to:</p>
+<ul>
+<li>Hypertrophic cardiomyopathy</li>
+<li>Hip dysplasia</li>
+<li>Spinal muscular atrophy</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>12 to 15 years</p>
+</div>
+</div>
+</div>
+<div id="bengal" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Bengal Cat</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fbengal_4.jpg&cd=ec1a0e7ad1741bdd8bd9ced65b1c1229" alt="Bengal Cat" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Medium to large</div>
+<div class="info-item"><strong>Weight:</strong> Males 10-18 lbs, Females 6-12 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Medium</div>
+<div class="info-item"><strong>Color:</strong> Bright orange to light brown with dark spots or marbling</div>
+</div>
+<div class="detail-section">
+<h2>About the Bengal Cat</h2>
+<p>The Bengal cat is a unique breed that resembles a wild leopard but has the temperament of a domestic cat. They were created by crossing Asian leopard cats with domestic cats.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Bengals are highly active, intelligent, and playful cats. They are curious explorers who love to climb, jump, and investigate everything. Many Bengals enjoy playing with water, which is unusual for cats.</p>
+<p>They are energetic and require plenty of mental and physical stimulation. Interactive toys, puzzle feeders, and climbing structures are essential for their wellbeing.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>Bengals have a wild appearance with their spotted or marbled coat, muscular build, and alert expression. Their coat is sleek and often has a glittery sheen that makes them stand out.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Bengals have short coats that are easy to maintain with weekly brushing. They generally enjoy grooming sessions.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Bengals are generally healthy but may be prone to:</p>
+<ul>
+<li>Progressive retinal atrophy</li>
+<li>Hypertrophic cardiomyopathy</li>
+<li>Patellar luxation</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>12 to 16 years</p>
+</div>
+</div>
+</div>
+<div id="british" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>British Shorthair</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fbritish_shorthair_cat_4.jpg&cd=cfa5425d199c2896780b1469e2f1a60a" alt="British Shorthair" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Medium to large</div>
+<div class="info-item"><strong>Weight:</strong> Males 12-18 lbs, Females 9-15 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Short, plush, dense</div>
+<div class="info-item"><strong>Color:</strong> Blue, white, black, red, cream, smoke, silver, golden, plus various patterns</div>
+</div>
+<div class="detail-section">
+<h2>About the British Shorthair</h2>
+<p>The British Shorthair is one of the oldest cat breeds in Britain. These cats are known for their round faces, chubby cheeks, and dense, plush coats that feel like teddy bears.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>British Shorthairs are calm, easygoing, and affectionate without being overly demanding. They are independent cats that enjoy their own space but also appreciate companionship. They are perfect for people who want a loving cat that isn't too clingy.</p>
+<p>These cats are patient and get along well with children and other pets, making them excellent family cats.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>British Shorthairs have a stocky, muscular build with a round face, full cheeks, and large round eyes. Their dense coat gives them a plush, cuddly appearance.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Their short coat is easy to maintain with weekly brushing. During shedding season, more frequent brushing may be needed.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>British Shorthairs may be prone to:</p>
+<ul>
+<li>Hypertrophic cardiomyopathy</li>
+<li>Polycystic kidney disease</li>
+<li>Obesity (due to their laid-back nature)</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>12 to 17 years</p>
+</div>
+</div>
+</div>
+<div id="ragdoll" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Ragdoll Cat</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fragdoll_3.jpg&cd=f117e5878cf9b2701fedf219f3576887" alt="Ragdoll Cat" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Large</div>
+<div class="info-item"><strong>Weight:</strong> 10-15 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Semi-long, plush, silky</div>
+<div class="info-item"><strong>Color:</strong> Seal, blue, chocolate, lilac, red, cream, plus various patterns</div>
+</div>
+<div class="detail-section">
+<h2>About the Ragdoll Cat</h2>
+<p>The Ragdoll is a large, affectionate cat breed known for its tendency to go limp when picked up, just like a ragdoll toy. They are one of the most docile and relaxed cat breeds.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Ragdolls are extremely gentle, calm, and affectionate. They love being held and will often greet you at the door like a dog. These cats are very social and follow their owners from room to room, preferring to be wherever their family is.</p>
+<p>They are patient and tolerant, making them wonderful companions for families with children. Ragdolls are not aggressive and prefer peaceful environments.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>Ragdolls are large cats with striking blue eyes, color-pointed coats, and soft, silky fur. They have a sturdy build and can take up to four years to reach full maturity.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Despite their long coat, Ragdolls are relatively easy to groom. Their fur doesn't mat easily, but regular brushing twice a week helps keep it in good condition.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Ragdolls may be prone to:</p>
+<ul>
+<li>Hypertrophic cardiomyopathy</li>
+<li>Polycystic kidney disease</li>
+<li>Bladder stones</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>13 to 18 years</p>
+</div>
+</div>
+</div>
+<div id="abyssinian" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Abyssinian Cat</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fabyssinian_cat_3.jpg&cd=69d594294cf5ba3eab55c7e7fa49abe5" alt="Abyssinian Cat" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Small to medium</div>
+<div class="info-item"><strong>Weight:</strong> Males 7-10 lbs, Females 6-8 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Short, fine</div>
+<div class="info-item"><strong>Color:</strong> Ruddy, red, blue, fawn</div>
+</div>
+<div class="detail-section">
+<h2>About the Abyssinian Cat</h2>
+<p>The Abyssinian is one of the oldest known cat breeds. They have a wild, exotic appearance with their ticked coat and large ears, resembling ancient Egyptian cats.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Abyssinians are extremely active, curious, and playful. They love to explore, climb, and investigate everything in their environment. These cats are highly intelligent and enjoy interactive play and puzzle toys.</p>
+<p>They are social cats that form strong bonds with their families and prefer to be involved in household activities.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>Abyssinians have a sleek, muscular body with a distinctive ticked coat where each hair has multiple bands of color. They have large, alert ears and expressive almond-shaped eyes.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Abyssinians have short coats that require minimal grooming. Weekly brushing is usually sufficient to keep their coat healthy and shiny.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Abyssinians may be prone to:</p>
+<ul>
+<li>Progressive retinal atrophy</li>
+<li>Pyruvate kinase deficiency</li>
+<li>Renal amyloidosis</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>9 to 15 years</p>
+</div>
+</div>
+</div>
+<div id="scottish" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Scottish Fold</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fscottish_fold_cat_4.jpg&cd=6ea9b512c1eb9d825dd0fcff56dcf585" alt="Scottish Fold" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Medium</div>
+<div class="info-item"><strong>Weight:</strong> Males 9-13 lbs, Females 6-9 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Longhair (medium-long), Shorthair (medium-short, dense, plush)</div>
+<div class="info-item"><strong>Color:</strong> White, black, blue, red, cream, silver, plus various patterns</div>
+</div>
+<div class="detail-section">
+<h2>About the Scottish Fold</h2>
+<p>The Scottish Fold is instantly recognizable by its unique folded ears that give it an owl-like appearance. This breed originated in Scotland in the 1960s.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Scottish Folds are sweet-tempered, calm, and affectionate. They are adaptable cats that get along well with children and other pets. They enjoy human companionship and like to be involved in family activities.</p>
+<p>These cats are not overly vocal and have soft, quiet voices. They are playful but not hyperactive, making them ideal indoor companions.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>The most distinctive feature of Scottish Folds is their folded ears, which fold forward and downward. They have round faces with large, round eyes that give them a sweet expression. Not all Scottish Folds have folded ears; some have straight ears.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Shorthair Scottish Folds need weekly brushing, while longhair varieties require more frequent grooming to prevent matting. Their ears need regular checking and cleaning.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Scottish Folds may be prone to:</p>
+<ul>
+<li>Osteochondrodysplasia (cartilage abnormality)</li>
+<li>Degenerative joint disease</li>
+<li>Cardiomyopathy</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>11 to 15 years</p>
+</div>
+</div>
+</div>
+<div id="sphynx" class="page">
+<div class="detail-container">
+<a href="#breeds" class="back-btn">← Back to Breeds</a>
+<div class="detail-header">
+<h1>Sphynx Cat</h1>
+</div>
+<img src="https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Fsphynx_2.jpg&cd=03f80fd516bed34d577627319af5f788" alt="Sphynx Cat" class="detail-image">
+<div class="info-grid">
+<div class="info-item"><strong>Size:</strong> Medium</div>
+<div class="info-item"><strong>Weight:</strong> Males 8-12 lbs, Females 6-9 lbs</div>
+<div class="info-item"><strong>Coat:</strong> Hairless (some have fine down)</div>
+<div class="info-item"><strong>Color:</strong> White, black, blue, red, cream, chocolate, lavender, plus various patterns</div>
+</div>
+<div class="detail-section">
+<h2>About the Sphynx Cat</h2>
+<p>The Sphynx is a unique hairless cat breed that originated in Canada. Despite their lack of fur, they are warm to the touch and often described as feeling like a warm peach or suede hot water bottle.</p>
+</div>
+<div class="detail-section">
+<h2>Temperament</h2>
+<p>Sphynx cats are extremely friendly, energetic, and affectionate. They are outgoing and love being the center of attention. These cats are known for their playful, mischievous nature and their tendency to perform silly antics to entertain their owners.</p>
+<p>They are highly social and don't like being alone. Sphynx cats will greet guests at the door and enjoy meeting new people.</p>
+</div>
+<div class="detail-section">
+<h2>Characteristics</h2>
+<p>The Sphynx's hairless appearance is its most distinctive feature. They have wrinkled skin, large ears, lemon-shaped eyes, and a muscular, athletic build. Their skin can display any color or pattern that fur would normally show.</p>
+</div>
+<div class="detail-section">
+<h2>Grooming</h2>
+<p>Despite having no fur, Sphynx cats require regular bathing (weekly or bi-weekly) because oils accumulate on their skin. Their ears need frequent cleaning, and they should be kept warm in cold weather.</p>
+</div>
+<div class="detail-section">
+<h2>Health</h2>
+<p>Sphynx cats may be prone to:</p>
+<ul>
+<li>Hypertrophic cardiomyopathy</li>
+<li>Hereditary myopathy</li>
+<li>Skin conditions</li>
+<li>Sensitivity to temperature extremes</li>
+</ul>
+</div>
+<div class="detail-section">
+<h2>Lifespan</h2>
+<p>8 to 14 years</p>
+</div>
+</div>
+</div>
+<div id="care" class="page">
+<div class="title">
+<h1>How to Take Care of Your Cat</h1>
+<p>Tips to keep your cat happy and healthy</p>
+</div>
+<div class="box">
+<h2>&#127830; Feeding Your Cat</h2>
+<ul>
+<li>Feed your cat high-quality cat food appropriate for their age</li>
+<li>Provide fresh water at all times</li>
+<li>Adult cats should eat 2-3 times per day</li>
+<li>Avoid giving them chocolate, onions, garlic, and grapes</li>
+<li>Treats should make up no more than 10% of their diet</li>
+</ul>
+</div>
+<div class="box">
+<h2>&#x1F9FC; Grooming</h2>
+<ul>
+<li>Brush long-haired cats daily to prevent matting</li>
+<li>Short-haired cats need brushing once or twice a week</li>
+<li>Trim nails every 2-3 weeks</li>
+<li>Clean ears gently when they look dirty</li>
+<li>Brush teeth regularly to prevent dental disease</li>
+</ul>
+</div>
+<div class="box">
+<h2>&#127973; Health Care</h2>
+<ul>
+<li>Take your cat to the vet at least once a year</li>
+<li>Keep vaccinations up to date</li>
+<li>Use flea and tick prevention year-round</li>
+<li>Watch for signs of illness like changes in eating or behavior</li>
+<li>Spay or neuter your cat to prevent health problems</li>
+</ul>
+</div>
+<div class="box">
+<h2>&#127880; Exercise and Play</h2>
+<ul>
+<li>Play with your cat for at least 15 minutes twice daily</li>
+<li>Provide toys like balls, feathers, and puzzle feeders</li>
+<li>Install cat trees or shelves for climbing</li>
+<li>Rotate toys to keep them interesting</li>
+<li>Interactive play strengthens your bond</li>
+</ul>
+</div>
+<div class="box">
+<h2>&#127968; Creating a Safe Home</h2>
+<ul>
+<li>Keep toxic plants out of reach</li>
+<li>Secure windows and balconies</li>
+<li>Provide a clean litter box (one per cat plus one extra)</li>
+<li>Create hiding spots where your cat can feel safe</li>
+<li>Keep household chemicals locked away</li>
+</ul>
+</div>
+<div class="box">
+<h2>&#10084; Love and Attention</h2>
+<p>Cats need emotional care too! Spend quality time with your cat every day. Learn to read their body language so you know when they want attention and when they need space. Every cat has a unique personality, so get to know what makes your cat happy. With proper care, love, and attention, your cat can live a long, healthy, and joyful life as your beloved companion.</p>
+</div>
+</div>
+<footer>
+<p>Author: E.Enkhriimaa MT-2</p>
+<p>&copy; 2025 Cat Breeds Guide</p>
+<p><a href="mailto:b210930104@erdenetis.edu.mn">choosecheesecake@gmail.com</a></p>
+</footer>
+</body>
+</html>
